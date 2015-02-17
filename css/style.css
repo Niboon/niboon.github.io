@@ -359,7 +359,7 @@
 			input[type="reset"].style1,
 			.button.style1
 			{
-				background: #88fdfd url('images/overlay.png');
+				background: #80dede url('images/overlay.png');
 				color: #fff;
 			}
 
@@ -502,7 +502,7 @@
 
 			.feature-list h3
 			{
-				color: #88fdfd !important;
+				color: #80dede !important;
 			}
 			
 				.feature-list h3:before
@@ -589,14 +589,14 @@
 
 		.wrapper.style1
 		{
-			background: #88fdfd url('images/overlay.png');
+			background: #80dede url('images/overlay.png');
 			color: #eee;
 			color: rgba(255,255,255,0.75);
 		}
 		
 			.wrapper.style1 .title
 			{
-				background: #88fdfd url('images/overlay.png');
+				background: #80dede url('images/overlay.png');
 				color: #fff;
 			}
 		
@@ -838,7 +838,7 @@
 		
 			#highlights .highlight h3
 			{
-				color: #88fdfd;
+				color: #80dede;
 			}
 
 /*********************************************************************************/
