@@ -1,9 +1,9 @@
 #Personal Webpage
 #Niboon Tangnirunkul
-##www.niboon.me
+##http://niboon.me
 ###Software Developer
 ###Mechatronics Engineering Student
-###Web • Mobile • E-Commerce • Embedded
+###Web â€¢ Mobile â€¢ E-Commerce â€¢ Embedded
 
 
 #####Credits
