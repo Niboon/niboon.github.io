@@ -876,7 +876,7 @@
         text-indent: 100%;
         white-space: nowrap;
         background: rgba(221, 147, 140, 0.80) url(../img/cd-top-arrow.svg) no-repeat center;
-        background-size: 60%;
+        background-size: 50%;
         visibility: hidden;
         opacity: 0;
         -webkit-transition: opacity .3s 0s, visibility 0s .3s;
