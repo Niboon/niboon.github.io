@@ -859,7 +859,7 @@
     .cd-top {
         position: absolute;
         bottom: 0;
-        left: 0;
+        right: 6px;
         width: 54px;
         height: 38px;
         border-radius: 0.5vw;
