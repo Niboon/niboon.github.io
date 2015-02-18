@@ -858,8 +858,9 @@
 
     .cd-top {
         display: inline-block;
-        height: 40vw;
-        width: 40vw;
+        height: 6vw;
+        width: 8vw;
+        border-radius: 0.5vw;
         position: fixed;
         z-index: 999999;
         top: 7%;
