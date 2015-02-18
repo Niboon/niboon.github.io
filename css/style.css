@@ -857,9 +857,9 @@
     }
 
     .cd-top {
-        position: fixed;
-        top: 10px;
-        right: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
         width: 54px;
         height: 38px;
         border-radius: 0.5vw;
