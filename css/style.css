@@ -859,7 +859,7 @@
     .cd-top {
         position: absolute;
         bottom: 0;
-        right: 0;
+        left: 0;
         width: 54px;
         height: 38px;
         border-radius: 0.5vw;
@@ -876,7 +876,7 @@
         text-indent: 100%;
         white-space: nowrap;
         background: rgba(221, 147, 140, 0.80) url(../img/cd-top-arrow.svg) no-repeat center;
-        background-size: 50%;
+        background-size: 40%;
         visibility: hidden;
         opacity: 0;
         -webkit-transition: opacity .3s 0s, visibility 0s .3s;
