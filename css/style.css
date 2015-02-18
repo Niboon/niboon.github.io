@@ -857,14 +857,19 @@
     }
 
     .cd-top {
-        display: inline-block;
-        height: 6vw;
-        width: 8vw;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        width: 60px;
+        height: 44px;
         border-radius: 0.5vw;
-        position: fixed;
+        /*display: inline-block;*/
+        /*height: 6vw;*/
+        /*width: 8vw;*/
+        /*position: fixed;*/
+        /*top: 7%;*/
+        /*right: 5%;*/
         z-index: 999999;
-        top: 7%;
-        right: 5%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
         /* image replacement properties */
         overflow: hidden;
