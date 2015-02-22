@@ -185,7 +185,7 @@
 
 			#titleBar .toggle:before
 			{
-				font-family: FontAwesome;
+                font-family: FontAwesome, serif;
 				text-decoration: none;
 				font-style: normal;
 				font-weight: normal;
@@ -220,7 +220,7 @@
 	#navPanel
 	{
 		background: #242730 url('images/overlay.png');
-		box-shadow: inset -3px 0px 4px 0px rgba(0,0,0,0.1);
+		box-shadow: inset -3px 0 4px 0 rgba(0,0,0,0.1);
 	}
 
 		#navPanel .link
@@ -231,7 +231,8 @@
 			text-decoration: none;
 			font-size: 0.85em;
 			letter-spacing: 0.15em;
-			text-decoration: none;
+            /*noinspection CssOverwrittenProperties*/
+            text-decoration: none;
 			height: 44px;
 			line-height: 44px;
 			border-top: solid 1px rgba(255,255,255,0.05);
@@ -389,6 +390,16 @@
 		{
 			display: none;
 		}
+
+/*********************************************************************************/
+/* Contact Bookmark                                                              */
+/*********************************************************************************/
+
+#Contact
+{
+    position: absolute;
+    margin-top: 15px;
+}
 
 /*********************************************************************************/
 /* Copyright                                                                     */
