@@ -6,13 +6,43 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Niboon Tangnirunkul - Mechatronics Engineer and Software Developer at Pathos Engineering: E-Commerce Solutions, X-Cart 5 Modules, Android Applications, Big Data Solutions and other Engineering Solutions" />
 		<meta name="keywords" content="Niboon, Tangnirunkul, X-Cart 5, Modules, X-Cart5, XC5, Software, Pathos Engineering, Splunk" />
-		<script src="js/defer.min.js"></script>
+		<script type="text/javascript">
+			function scriptAtOnload() {
+			var element = document.createElement("script");
+			element.src = "js/defer.min.js";
+			document.body.appendChild(element);
+			}
+			if (window.addEventListener)
+			window.addEventListener("load", scriptAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", scriptAtOnload);
+			else window.onload = scriptAtOnload;
+		</script>
+		<!--<script src="js/defer.min.js"></script>-->
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<!-- <script src="js/jquery.min.js"></script>
 		<script src="js/jquery.dropotron.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script async src="js/init.js"></script> -->
+		<style>
+		/*********************************************************************************/
+		/* PreLoading Logo                                                               */
+		/*********************************************************************************/
+			/* If Javascript is not present, don't show loader */
+			.no-js #loader { display: none;  }
+			.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+			.loadicon {
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				opacity: 0.98;
+				z-index: 999999;
+				height: 100%;
+				background: url(images/gears-gif-preloader.gif) center no-repeat #67B5C1;
+			}
+		</style>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -21,8 +51,11 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
+		<!-- PreLoader GIF Icon -->
+		<div class="loadicon"></div>
 
-		<!-- Header -->
+		<div id="loadedPage">
+			<!-- Header -->
 			<div id="header-wrapper" class="wrapper">
                 <a id="Top" name="Top" style="display:none"></a>
 				<div id="header">
@@ -63,236 +96,237 @@
 
 				</div>
 			</div>
-		
-		<!-- Intro -->        
-		<a name="Intro" class="bookmark"></a>
-			<div id="intro-wrapper" class="wrapper style1">
-				<div class="title" onclick="location.href='#Intro'">The Introduction</div>
-				<section id="intro" class="container">
-					<p class="style1">So in case you were wondering what this is all about ...</p>
-					<p class="style2">
-						• This Website Is Still Under Construction •
-					</p>
-					<p class="style3">This site is fully <strong>responsive</strong>.</p>
-					<ul class="actions">
-						<li><a href="#Contact" class="button style3 big">Proceed</a></li>
-					</ul>
-				</section>
-			</div>
-		
-		<!-- Main -->        
-		<a name="Main" class="bookmark"></a>
-			<div class="wrapper style2">
-				<div class="title" onclick="location.href='#Main'">The Details</div>
-				<div id="main" class="container">
-					
-					<!-- Image -->
-						<a href="#" class="image featured">
-							<img src="images/pic01.jpg" alt="" />
-						</a>
-					
-					<!-- Features -->
-						<section id="features">
-							<header class="style1">
-								<h2>My Services and Expertise</h2>
-								<p>Software, Hardware, Mechanical and Electrical Engineering</p>
-							</header>
-							<div class="feature-list">
-								<div class="row">
-									<div class="6u">
-										<section>
-											<h3 class="icon fa-comment">Consultation</h3>
-											<p>Placeholder</p>
-										</section>
-									</div>
-									<div class="6u">
-										<section>
-											<h3 class="icon fa-refresh">Upgrading</h3>
-											<p>Placeholder</p>
-										</section>
-									</div>
-								</div>
-								<div class="row">
-									<div class="6u">
-										<section>
-											<h3 class="icon fa-picture-o">Design</h3>
-											<p>Placeholder</p>
-										</section>
-									</div>
-									<div class="6u">
-										<section>
-											<h3 class="icon fa-cog">Installation</h3>
-											<p>Placeholder</p>
-										</section>
-									</div>
-								</div>
-								<div class="row">
-									<div class="6u">
-										<section>
-											<h3 class="icon fa-wrench">Maintainence</h3>
-											<p>Placeholder</p>
-										</section>
-									</div>
-									<div class="6u">
-										<section>
-											<h3 class="icon fa-check">Service</h3>
-											<p>Placeholder</p>
-										</section>
-									</div>
-								</div>
-							</div>
-							<ul class="actions actions-centered">
-								<li><a href="#Contact" class="button style1 big">Get Started</a></li>
-								<li><a href="#Contact" class="button style2 big">More Info</a></li>
-							</ul>
-						</section>
-				
+			
+			<!-- Intro -->        
+			<a name="Intro" class="bookmark"></a>
+				<div id="intro-wrapper" class="wrapper style1">
+					<div class="title" onclick="location.href='#Intro'">The Introduction</div>
+					<section id="intro" class="container">
+						<p class="style1">So in case you were wondering what this is all about ...</p>
+						<p class="style2">
+							• This Website Is Still Under Construction •
+						</p>
+						<p class="style3">This site is fully <strong>responsive</strong>.</p>
+						<ul class="actions">
+							<li><a href="#Contact" class="button style3 big">Proceed</a></li>
+						</ul>
+					</section>
 				</div>
-			</div>
-		
-		<!-- Highlights -->        
-		<a name="Highlights" class="bookmark"></a>
-			<div class="wrapper style3">
-				<div class="title" onclick="location.href='#Highlights'">Past Projects and Companies</div><br/>
-				<div id="highlights" class="container">
-					<div class="row 150%">
-						<div class="4u">
-							<section class="highlight">
-								<a href="#Contact" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#Contact">Shaw Communications</a></h3>
-								<p>Custom Analytical Dashboard Development.</p>
-								<ul class="actions">
-									<li><a href="#Contact" class="button style1">Learn More</a></li>
+			
+			<!-- Main -->        
+			<a name="Main" class="bookmark"></a>
+				<div class="wrapper style2">
+					<div class="title" onclick="location.href='#Main'">The Details</div>
+					<div id="main" class="container">
+						
+						<!-- Image -->
+							<a href="#" class="image featured">
+								<img src="images/pic01.jpg" alt="" />
+							</a>
+						
+						<!-- Features -->
+							<section id="features">
+								<header class="style1">
+									<h2>My Services and Expertise</h2>
+									<p>Software, Hardware, Mechanical and Electrical Engineering</p>
+								</header>
+								<div class="feature-list">
+									<div class="row">
+										<div class="6u">
+											<section>
+												<h3 class="icon fa-comment">Consultation</h3>
+												<p>Placeholder</p>
+											</section>
+										</div>
+										<div class="6u">
+											<section>
+												<h3 class="icon fa-refresh">Upgrading</h3>
+												<p>Placeholder</p>
+											</section>
+										</div>
+									</div>
+									<div class="row">
+										<div class="6u">
+											<section>
+												<h3 class="icon fa-picture-o">Design</h3>
+												<p>Placeholder</p>
+											</section>
+										</div>
+										<div class="6u">
+											<section>
+												<h3 class="icon fa-cog">Installation</h3>
+												<p>Placeholder</p>
+											</section>
+										</div>
+									</div>
+									<div class="row">
+										<div class="6u">
+											<section>
+												<h3 class="icon fa-wrench">Maintainence</h3>
+												<p>Placeholder</p>
+											</section>
+										</div>
+										<div class="6u">
+											<section>
+												<h3 class="icon fa-check">Service</h3>
+												<p>Placeholder</p>
+											</section>
+										</div>
+									</div>
+								</div>
+								<ul class="actions actions-centered">
+									<li><a href="#Contact" class="button style1 big">Get Started</a></li>
+									<li><a href="#Contact" class="button style2 big">More Info</a></li>
 								</ul>
 							</section>
-						</div>
-						<div class="4u">
-							<section class="highlight">
-								<a href="#Contact" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#Contact">QuickPlay Media</a></h3>
-								<p>Video Streaming Android Application.</p>
-								<ul class="actions">
-									<li><a href="#Contact" class="button style1">Learn More</a></li>
-								</ul>
-							</section>
-						</div>
-						<div class="4u">
-							<section class="highlight">
-								<a href="#Contact" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								<h3><a href="#Contact">Proax Technologies</a></h3>
-								<p>B2B E-Commerce Development.</p>
-								<ul class="actions">
-									<li><a href="#Contact" class="button style1">Learn More</a></li>
-								</ul>
-							</section>
+					
+					</div>
+				</div>
+			
+			<!-- Highlights -->        
+			<a name="Highlights" class="bookmark"></a>
+				<div class="wrapper style3">
+					<div class="title" onclick="location.href='#Highlights'">Past Projects and Companies</div><br/>
+					<div id="highlights" class="container">
+						<div class="row 150%">
+							<div class="4u">
+								<section class="highlight">
+									<a href="#Contact" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+									<h3><a href="#Contact">Shaw Communications</a></h3>
+									<p>Custom Analytical Dashboard Development.</p>
+									<ul class="actions">
+										<li><a href="#Contact" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="highlight">
+									<a href="#Contact" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<h3><a href="#Contact">QuickPlay Media</a></h3>
+									<p>Video Streaming Android Application.</p>
+									<ul class="actions">
+										<li><a href="#Contact" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="highlight">
+									<a href="#Contact" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+									<h3><a href="#Contact">Proax Technologies</a></h3>
+									<p>B2B E-Commerce Development.</p>
+									<ul class="actions">
+										<li><a href="#Contact" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-		<!-- Footer -->
-        <a name="Contact" class="bookmark"></a>
-			<div id="footer-wrapper" class="wrapper">
-				<div class="title" onclick="location.href='#Contact'">Reach Me</div>
-				<div id="footer" class="container">
-					<header class="style1">
-						<h2>Quench That Burning Question!</h2>
-						<p>
-							Leave every stone unturned and relinquish your doubts!<br />
-							Reach out and drop me a message!
-						</p>
-					</header>
-					<div class="row 150%">
-						<div class="6u">
-							<!-- Contact Form -->
-								<section>
-									<form method="post" action="#">
-										<div class="row 50%">
+			<!-- Footer -->
+	        <a name="Contact" class="bookmark"></a>
+				<div id="footer-wrapper" class="wrapper">
+					<div class="title" onclick="location.href='#Contact'">Reach Me</div>
+					<div id="footer" class="container">
+						<header class="style1">
+							<h2>Quench That Burning Question!</h2>
+							<p>
+								Leave every stone unturned and relinquish your doubts!<br />
+								Reach out and drop me a message!
+							</p>
+						</header>
+						<div class="row 150%">
+							<div class="6u">
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="#">
+											<div class="row 50%">
+												<div class="6u">
+													<input type="text" name="name" id="contact-name" placeholder="Name" />
+												</div>
+												<div class="6u">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+											</div>
+											<div class="row 50%">
+												<div class="12u">
+													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												</div>
+											</div>
+											<div class="row">
+												<div class="12u">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Send" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="6u">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
 											<div class="6u">
-												<input type="text" name="name" id="contact-name" placeholder="Name" />
+												<section>
+													<h3 class="icon fa-home">Address</h3>
+													<p>
+														ADDRESS PLACEHOLDER:<br />
+														Pathos Engineering<br />
+														117 Capital Wasteland Rd #7<br />
+														Midgar, 343117
+													</p>
+												</section>
 											</div>
 											<div class="6u">
-												<input type="text" name="email" id="contact-email" placeholder="Email" />
-											</div>
-										</div>
-										<div class="row 50%">
-											<div class="12u">
-												<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												<section>
+													<h3 class="icon fa-comment">Social</h3>
+													<p>
+														<a class="social" href="http://ca.linkedin.com/in/niboon">linkedin.com/in/niboon</a><br />
+														<a class="social" href="#">facebook.com/PathosEngineering</a>
+														<a class="social" href="#">@PathosEng</a><br />
+													</p>
+												</section>
 											</div>
 										</div>
 										<div class="row">
-											<div class="12u">
-												<ul class="actions">
-													<li><input type="submit" class="style1" value="Send" /></li>
-													<li><input type="reset" class="style2" value="Reset" /></li>
-												</ul>
+											<div class="6u">
+												<section>
+													<h3 class="icon fa-envelope">Email</h3>
+													<p>
+														pathos@engineer.com<br />
+													</p>
+												</section>
+											</div>
+											<div class="6u">
+												<section>
+													<h3 class="icon fa-phone">Phone</h3>
+													<p>
+														PHONE PLACEHOLDER
+														(226) 791-xxxx
+													</p>
+												</section>
 											</div>
 										</div>
-									</form>
-								</section>
-
+									</section>
+									
+							</div>
 						</div>
-						<div class="6u">
-
-							<!-- Contact -->
-								<section class="feature-list small">
-									<div class="row">
-										<div class="6u">
-											<section>
-												<h3 class="icon fa-home">Address</h3>
-												<p>
-													ADDRESS PLACEHOLDER:<br />
-													Pathos Engineering<br />
-													117 Capital Wasteland Rd #7<br />
-													Midgar, 343117
-												</p>
-											</section>
-										</div>
-										<div class="6u">
-											<section>
-												<h3 class="icon fa-comment">Social</h3>
-												<p>
-													<a class="social" href="http://ca.linkedin.com/in/niboon">linkedin.com/in/niboon</a><br />
-													<a class="social" href="#">facebook.com/PathosEngineering</a>
-													<a class="social" href="#">@PathosEng</a><br />
-												</p>
-											</section>
-										</div>
-									</div>
-									<div class="row">
-										<div class="6u">
-											<section>
-												<h3 class="icon fa-envelope">Email</h3>
-												<p>
-													pathos@engineer.com<br />
-												</p>
-											</section>
-										</div>
-										<div class="6u">
-											<section>
-												<h3 class="icon fa-phone">Phone</h3>
-												<p>
-													PHONE PLACEHOLDER
-													(226) 791-xxxx
-												</p>
-											</section>
-										</div>
-									</div>
-								</section>
-								
-						</div>
+						<br/>
+						<br/>
+						<hr />
 					</div>
-					<br/>
-					<br/>
-					<hr />
-				</div>
 
-				<br/>
-				<br/>
-				<div id="copyright">
-					<ul>
-						<li>&copy; Pathos Engineering</li><li><a href="http://html5up.net">Escape Velocity</a></li>
-					</ul>
+					<br/>
+					<br/>
+					<div id="copyright">
+						<ul>
+							<li>&copy; Pathos Engineering</li><li><a href="http://html5up.net">Escape Velocity</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
