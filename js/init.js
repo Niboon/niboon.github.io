@@ -108,7 +108,15 @@ jQuery(document).ready(function($){
     //duration of the top scrolling animation (in ms)
             scroll_top_duration = 700,
     //grab the "back to top" link
-            $back_to_top = $('.cd-top');
+            $back_to_top = $('.cd-top'),
+
+    //grab the loading icon screen
+            l=e(".loadicon");
+
+    l.fadeTo(200,0.99);
+
+    //remove the loading icon screen when page is ready
+    e(window).ready(function(){l.delay(250).fadeOut(700);});
 
     //hide or show the "back to top" link
     $(window).scroll(function(){
