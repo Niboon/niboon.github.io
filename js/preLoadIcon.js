@@ -7,6 +7,6 @@ jQuery(document).ready(function() {
 
 //remove the loading icon screen when page is ready
     jQuery(window).ready(function () {
-        loading.delay(250).hide(600);
+        loading.delay(250).fadeOut(600);
     });
 });
