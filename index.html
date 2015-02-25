@@ -319,8 +319,14 @@
                 element.onload = callback;
                 document.body.appendChild(element);
             }
+            function defer(method) {
+                if (window.$)
+                    method();
+                else
+                    setTimeout(function() { defer(method) }, 50);
+            }
             function scriptAtOnload() {
-                addScript("js/jquery.min.js",addScript("js/defer.min.js"));
+                addScript("js/jquery.min.js",defer(addScript("js/defer.min.js")));
             }
             if (window.addEventListener)
                 window.addEventListener("load", scriptAtOnload, false);
