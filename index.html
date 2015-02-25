@@ -93,24 +93,6 @@
 					</section>
 				</div>
 
-
-            <script src="js/jquery.min.js" async="async"></script>
-            <script type="text/javascript" async="async">
-                function addScript(src) {
-                    var element = document.createElement("script");
-                    element.src = src;
-                    document.body.appendChild(element);
-                }
-                function scriptAtOnload() {
-                    addScript("js/defer.min.js");
-                }
-                if (window.addEventListener)
-                    window.addEventListener("load", scriptAtOnload, false);
-                else if (window.attachEvent)
-                    window.attachEvent("onload", scriptAtOnload);
-                else window.onload = scriptAtOnload;
-            </script>
-
 			<!-- Main -->        
 			<a name="Main" class="bookmark"></a>
 				<div class="wrapper style2">
@@ -327,5 +309,22 @@
 					</div>
 				</div>
 			</div>
+
+        <script src="js/jquery.min.js" async="async"></script>
+        <script type="text/javascript" async="async">
+            function addScript(src) {
+                var element = document.createElement("script");
+                element.src = src;
+                document.body.appendChild(element);
+            }
+            function scriptAtOnload() {
+                addScript("js/defer.min.js");
+            }
+            if (window.addEventListener)
+                window.addEventListener("load", scriptAtOnload, false);
+            else if (window.attachEvent)
+                window.attachEvent("onload", scriptAtOnload);
+            else window.onload = scriptAtOnload;
+        </script>
 	</body>
 </html>
