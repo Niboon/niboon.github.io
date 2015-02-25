@@ -18,7 +18,7 @@
                     stylesheet.href = src;
                     stylesheet.rel = 'stylesheet';
                     stylesheet.type = 'text/css';
-                    document.getElementsByTagName('head')[0].appendChild(stylesheet);
+                    document.body.appendChild(stylesheet);
                 }
                 addScript("js/defer.min.js");
                 addStyle("css/defer.min.css");
