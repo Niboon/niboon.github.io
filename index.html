@@ -319,8 +319,11 @@
                 element.onreadystatechange = callback;
                 element.onload = callback;
             }
+            var deferCode = function() {
+                (function($){$.getScript("jquery.dropotron.min.js");$.getScript("skel.min.js");$.getScript("skel-layers.min.js");$.getScript("init.js")})(jQuery);
+            };
             function scriptAtOnload() {
-                addScript("js/jQuery.min.js",addScript("js/defer.min.js"));
+                addScript("js/jQuery.min.js",deferCode);
             }
             if (window.addEventListener)
                 window.addEventListener("load", scriptAtOnload, false);
