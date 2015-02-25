@@ -7,25 +7,12 @@
 		<meta name="description" content="Niboon Tangnirunkul - Mechatronics Engineer and Software Developer at Pathos Engineering: E-Commerce Solutions, X-Cart 5 Modules, Android Applications, Big Data Solutions and other Engineering Solutions" />
 		<meta name="keywords" content="Niboon, Tangnirunkul, X-Cart 5, Modules, X-Cart5, XC5, Software, Pathos Engineering, Splunk" />
 		<script type="text/javascript">
-            function addStyleSheet(src){
-                if (document.createStyleSheet) document.createStyleSheet(src);
-                else {
-                    var stylesheet = document.createElement('link');
-                    stylesheet.href = src;
-                    stylesheet.rel = 'stylesheet';
-                    stylesheet.type = 'text/css';
-                    document.getElementsByTagName('head')[0].appendChild(stylesheet);
-                }
-            }
             function addScript(src) {
                 var element = document.createElement("script");
                 element.src = src;
                 document.body.appendChild(element);
             }
             function scriptAtOnload() {
-                addStyleSheet("css/skel.min.css");
-                addStyleSheet("css/style.min.css");
-                addStyleSheet("css/style-desktop.min.css");
                 addScript("js/jquery.min.js");
                 addScript("js/preLoadIcon.min.js");
                 addScript("js/jquery.dropotron.min.js");
@@ -35,11 +22,10 @@
                 addScript("js/goToTop.min.js");
             }
 			if (window.addEventListener)
-			    window.addEventListener("load", scriptAtOnload, false);
+			window.addEventListener("load", scriptAtOnload, false);
 			else if (window.attachEvent)
-			    window.attachEvent("onload", scriptAtOnload);
-			else
-                window.onload = scriptAtOnload;
+			window.attachEvent("onload", scriptAtOnload);
+			else window.onload = scriptAtOnload;
 		</script>
 		<!--<script src="js/defer.min.js"></script>-->
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
@@ -53,12 +39,12 @@
 		/* PreLoading Logo                                                               */
 		/*********************************************************************************/
 			/* If Javascript is not present, don't show loader */
-			.no-js .loadicon { display: none;  }
-			.js .loadicon { display: block; position: absolute; left: 100px; top: 0; }
+			.no-js #loader { display: none;  }
+			.js #loader { display: block; position: absolute; left: 100px; top: 0; }
 			.loadicon {
 				position: fixed;
-				left: 0;
-				top: 0;
+				left: 0px;
+				top: 0px;
 				width: 100%;
 				opacity: 0.98;
 				z-index: 999999;
@@ -66,11 +52,11 @@
 				background: url(images/gears-gif-preloader.gif) center no-repeat #67B5C1;
 			}
 		</style>
-		<!--<noscript>-->
-			<!--<link rel="stylesheet" href="css/skel.min.css" />-->
-			<!--<link rel="stylesheet" href="css/style.min.css" />-->
-			<!--<link rel="stylesheet" href="css/style-desktop.min.css" />-->
-		<!--</noscript>-->
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
