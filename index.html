@@ -13,7 +13,15 @@
                     element.src = src;
                     document.body.appendChild(element);
                 }
+                function addStyle(src) {
+                    var stylesheet = document.createElement('link');
+                    stylesheet.href = src;
+                    stylesheet.rel = 'stylesheet';
+                    stylesheet.type = 'text/css';
+                    document.getElementsByTagName('head')[0].appendChild(stylesheet);
+                }
                 addScript("js/defer.min.js");
+                addStyle("css/defer.min.css");
             }
 			if (window.addEventListener)
 			window.addEventListener("load", scriptAtOnload, false);
@@ -47,9 +55,10 @@
 			}
 		</style>
 		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
+			<!--<link rel="stylesheet" href="css/defer.min.css" />-->
+			<!--<link rel="stylesheet" href="css/skel.min.css" />-->
+			<!--<link rel="stylesheet" href="css/style.min.css" />-->
+			<!--<link rel="stylesheet" href="css/style-desktop.min.css" />-->
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
