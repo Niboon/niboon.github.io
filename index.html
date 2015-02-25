@@ -313,17 +313,14 @@
             function addScript(src, callback) {
                 var element = document.createElement("script");
                 element.src = src;
-                document.body.appendChild(element);
                 // Then bind the event to the callback function.
                 // There are several events for cross browser compatibility.
                 element.onreadystatechange = callback;
                 element.onload = callback;
+                document.body.appendChild(element);
             }
-            var deferCode = function() {
-                (function($){$.getScript("js/jquery.dropotron.min.js");$.getScript("js/skel.min.js");$.getScript("js/skel-layers.min.js");$.getScript("js/init.js")})(jQuery);
-            };
             function scriptAtOnload() {
-                addScript("js/jQuery.min.js",deferCode);
+                addScript("js/jQuery.min.js",addScript("js/defer.min.js"));
             }
             if (window.addEventListener)
                 window.addEventListener("load", scriptAtOnload, false);
