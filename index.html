@@ -6,28 +6,6 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Niboon Tangnirunkul - Mechatronics Engineer and Software Developer at Pathos Engineering: E-Commerce Solutions, X-Cart 5 Modules, Android Applications, Big Data Solutions and other Engineering Solutions" />
 		<meta name="keywords" content="Niboon, Tangnirunkul, X-Cart 5, Modules, X-Cart5, XC5, Software, Pathos Engineering, Splunk" />
-		<script type="text/javascript">
-            function addScript(src) {
-                var element = document.createElement("script");
-                element.src = src;
-                document.body.appendChild(element);
-            }
-            function addStyle(src) {
-                var stylesheet = document.createElement('link');
-                stylesheet.href = src;
-                stylesheet.rel = 'stylesheet';
-                stylesheet.type = 'text/css';
-                document.body.appendChild(stylesheet);
-            }
-            function scriptAtOnload() {
-                addScript("js/defer.min.js");
-            }
-			if (window.addEventListener)
-			window.addEventListener("load", scriptAtOnload, false);
-			else if (window.attachEvent)
-			window.attachEvent("onload", scriptAtOnload);
-			else window.onload = scriptAtOnload;
-		</script>
 		<!--<script src="js/preReq.min.js"></script>-->
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<!-- <script src="js/jquery.min.js"></script>
@@ -55,9 +33,6 @@
 		</style>
 		<noscript>
 			<link rel="stylesheet" href="css/defer.min.css"/>
-			<!--<link rel="stylesheet" href="css/skel.min.css"/>-->
-			<!--<link rel="stylesheet" href="css/style.min.css"/>-->
-			<!--<link rel="stylesheet" href="css/style-desktop.min.css"/>-->
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
@@ -342,4 +317,19 @@
 			</div>
 
 	</body>
+    <script type="text/javascript">
+        function addScript(src) {
+            var element = document.createElement("script");
+            element.src = src;
+            document.body.appendChild(element);
+        }
+        function scriptAtOnload() {
+            addScript("js/defer.min.js");
+        }
+        if (window.addEventListener)
+            window.addEventListener("load", scriptAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", scriptAtOnload);
+        else window.onload = scriptAtOnload;
+    </script>
 </html>
