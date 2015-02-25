@@ -310,13 +310,17 @@
 				</div>
 			</div>
         <script type="text/javascript">
-            function addScript(src) {
+            function addScript(src, callback) {
                 var element = document.createElement("script");
                 element.src = src;
+                // Then bind the event to the callback function.
+                // There are several events for cross browser compatibility.
+                element.onreadystatechange = callback;
+                element.onload = callback;
                 document.body.appendChild(element);
             }
             function scriptAtOnload() {
-                addScript("js/defer.min.js");
+                addScript("js/jQuery.min.js",addScript("js/defer.min.js"));
             }
             if (window.addEventListener)
                 window.addEventListener("load", scriptAtOnload, false);
