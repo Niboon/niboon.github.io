@@ -5,8 +5,8 @@
     $.ajaxSetup({
         cache: true
     });
-    $.getScript("jquery.dropotron.min.js");
-    $.getScript("skel.min.js");
-    $.getScript("skel-layers.min.js");
-    $.getScript("init.js");}
+    $.getScript("js/jquery.dropotron.min.js");
+    $.getScript("js/skel.min.js");
+    $.getScript("js/skel-layers.min.js");
+    $.getScript("js/init.js");}
 )(jQuery);
