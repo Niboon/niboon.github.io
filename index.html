@@ -313,11 +313,11 @@
             function addScript(src, callback) {
                 var element = document.createElement("script");
                 element.src = src;
+                document.body.appendChild(element);
                 // Then bind the event to the callback function.
                 // There are several events for cross browser compatibility.
                 element.onreadystatechange = callback;
                 element.onload = callback;
-                document.body.appendChild(element);
             }
             function scriptAtOnload() {
                 addScript("js/jQuery.min.js",addScript("js/defer.min.js"));
