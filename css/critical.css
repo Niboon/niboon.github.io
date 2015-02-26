@@ -26,7 +26,6 @@ a
     text-decoration: underline;
     color: #717479;
 }
-
 strong, b
 {
     font-weight: 700;
@@ -79,7 +78,6 @@ p, ul, ol, dl, table, blockquote, form
 {
     margin-bottom: 2em;
 }
-
 /* Section/Article */
 
 section,
@@ -114,7 +112,6 @@ header.style1 p
 {
     color: #b1b4b9;
 }
-
 /* List */
 
 ul.default
@@ -126,60 +123,6 @@ ul.default
 ul.default li
 {
     padding-left: 0.5em;
-}
-
-/*********************************************************************************/
-/* Wrappers                                                                      */
-/*********************************************************************************/
-
-.wrapper
-{
-    position: relative;
-}
-
-.wrapper .title
-{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    text-align: center;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 700;
-    letter-spacing: 0.25em;
-    border-radius: 2px 2px 0 0;
-}
-
-.wrapper.style1
-{
-    background: #73caca;
-    color: #eee;
-    color: rgba(255,255,255,0.75);
-}
-
-.wrapper.style1 .title
-{
-    background: #73caca;
-    color: #fff;
-}
-
-.wrapper.style1 h1,
-.wrapper.style1 h2,
-.wrapper.style1 h3,
-.wrapper.style1 h4,
-.wrapper.style1 h5,
-.wrapper.style1 h6,
-.wrapper.style1 strong,
-.wrapper.style1 b,
-.wrapper.style1 a
-{
-    color: #fff;
-}
-
-#header-wrapper
-{
-    background: #272d3b;
-    background-size: cover;
 }
 /*********************************************************************************/
 /* Logo                                                                          */
@@ -202,8 +145,6 @@ ul.default li
     color: rgba(255,255,255,0.5);
     text-transform: uppercase;
 }
-
-
 /*********************************************************************************/
 /* Intro                                                                         */
 /*********************************************************************************/
