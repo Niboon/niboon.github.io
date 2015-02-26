@@ -7,57 +7,21 @@
 		<meta name="description" content="Niboon Tangnirunkul - Mechatronics Engineer and Software Developer at Pathos Engineering: E-Commerce Solutions, X-Cart 5 Modules, Android Applications, Big Data Solutions and other Engineering Solutions" />
 		<meta name="keywords" content="Niboon, Tangnirunkul, X-Cart 5, Modules, X-Cart5, XC5, Software, Pathos Engineering, Splunk" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<style>
-		/*********************************************************************************/
-		/* PreLoading Logo                                                               */
-		/*********************************************************************************/
-			/* If Javascript is not present, don't show loader */
-			.no-js #loader { display: none;  }
-			.js #loader { display: block; position: fixed; left: 100px; top: 0; }
-			.loadicon {
-				position: fixed;
-				left: 0;
-				top: 0;
-				width: 100%;
-                height: 100%;
-				z-index: 999999;
-				background: url(images/gears-gif-preloader.gif) center no-repeat #67B5C1;
-                background-size: auto 40%;
-			}
-
-        /*********************************************************************************/
-        /* Loaded Page Wrapper                                                           */
-        /*********************************************************************************/
-            #loadedPage {
-                display: none;
-            }
-		</style>
-        <!--<script>-->
-            <!--var cb = function() {-->
-                <!--var ns = document.createElement('noscript');-->
-                <!--var l = document.createElement('link'); l.rel = 'stylesheet';-->
-                <!--l.href = 'css/defer.min.css';-->
-                <!--ns.appendChild(l);-->
-                <!--var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(ns, h);-->
-            <!--};-->
-            <!--var raf = requestAnimationFrame || mozRequestAnimationFrame ||-->
-                    <!--webkitRequestAnimationFrame || msRequestAnimationFrame;-->
-            <!--if (raf) raf(cb);-->
-            <!--else window.addEventListener('load', cb);-->
-        <!--</script>-->
-		<!--<noscript>-->
-			<!--<link rel="stylesheet" href="css/defer.min.css"/>-->
-		<!--</noscript>-->
+		<noscript>
+			<link rel="stylesheet" href="css/defer.min.css"/>
+            <style>
+                img.b-lazy {display: none !important;}
+            </style>
+		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
-	<body class="homepage">
-		<!-- PreLoader GIF Icon -->
-		<div class="loadicon"></div>
-
+	<body class="loadicon">
+        <!--&lt;!&ndash; PreLoader GIF Icon &ndash;&gt;-->
+        <!--<div class="loadicon"></div>-->
 		<div id="loadedPage">
 			<!-- Header -->
-			<div id="header-wrapper" class="wrapper">
-                <a id="Top" name="Top" style="display:none"></a>
+			<div id="header-wrapper" class="wrapper b-lazy" data-src="images/banner.jpg">
+                <a id="Top" name="Top"></a>
 				<div id="header">
 					
 					<!-- Logo -->
@@ -121,8 +85,9 @@
 						
 						<!-- Image -->
 							<a href="#" class="image featured">
-								<img class="b-lazy" src="images/spacer.gif" alt="" data-src="images/pic01.jpg"/>
-							</a>
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-src="images/pic01.jpg"/>
+                                <noscript><img src="images/pic01.jpg" alt="" /></noscript>
+                            </a>
 						
 						<!-- Features -->
 							<section id="features">
@@ -191,7 +156,10 @@
 						<div class="row 150%">
 							<div class="4u">
 								<section class="highlight">
-									<a href="#Contact" class="image featured"><img class="b-lazy" src="images/spacer.gif" data-src="images/pic02.jpg" alt="" /></a>
+									<a href="#Contact" class="image featured">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/pic02.jpg" alt="" />
+                                        <noscript><img src="images/pic02.jpg" alt="" /></noscript>
+                                    </a>
 									<h3><a href="#Contact">Shaw Communications</a></h3>
 									<p>Custom Analytical Dashboard Development.</p>
 									<ul class="actions">
@@ -201,7 +169,10 @@
 							</div>
 							<div class="4u">
 								<section class="highlight">
-									<a href="#Contact" class="image featured"><img class="b-lazy" src="images/spacer.gif" data-src="images/pic03.jpg" alt="" /></a>
+									<a href="#Contact" class="image featured">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/pic03.jpg" alt="" />
+                                        <noscript><img src="images/pic03.jpg" alt="" /></noscript>
+                                    </a>
 									<h3><a href="#Contact">QuickPlay Media</a></h3>
 									<p>Video Streaming Android Application.</p>
 									<ul class="actions">
@@ -211,7 +182,10 @@
 							</div>
 							<div class="4u">
 								<section class="highlight">
-									<a href="#Contact" class="image featured"><img class="b-lazy" src="images/spacer.gif" data-src="images/pic04.jpg" alt="" /></a>
+									<a href="#Contact" class="image featured">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/pic04.jpg" alt="" />
+                                        <noscript><img src="images/pic04.jpg" alt="" /></noscript>
+                                    </a>
 									<h3><a href="#Contact">Proax Technologies</a></h3>
 									<p>B2B E-Commerce Development.</p>
 									<ul class="actions">
@@ -284,11 +258,11 @@
 											<div class="6u">
 												<section>
 													<h3 class="icon fa-comment">Social</h3>
-													<p>
+													<span>
 														<a class="social" href="http://ca.linkedin.com/in/niboon">linkedin.com/in/niboon</a><br />
 														<a class="social" href="#">facebook.com/PathosEngineering</a>
 														<a class="social" href="#">@PathosEng</a><br />
-													</p>
+													</span>
 												</section>
 											</div>
 										</div>
@@ -329,7 +303,8 @@
 					</div>
 				</div>
 			</div>
-        <script type="text/javascript" async="async">
+
+        <script type="text/javascript">
             (function() {
                 function getScript(url,success){
                     var script=document.createElement('script');
@@ -347,29 +322,36 @@
                     head.appendChild(script);
                 }
                 function scriptAtOnload() {
-                    getScript('js/jquery.min.js',
-                            function chainScript() {
-                                getScript("js/jquery.dropotron.min.js",
-                                        function chainScript1() {
-                                            getScript("js/skel.min.js",
-                                                    function chainScript2() {
-                                                        getScript("js/skel-layers.min.js",
-                                                                function chainScript3() {
-                                                                    getScript("js/init.min.js",
-                                                                            function chainScript4() {
-                                                                                getScript("js/goToTop.min.js",console.log('goToTop.min.js Loaded'));
-                                                                                getScript("js/preLoadIcon.min.js",console.log('preLoadIcon.min.js Loaded'));
-                                                                                getScript("js/blazy.min.js",
-                                                                                        function initBLazy() {
-                                                                                            console.log('blazy.min.js Loaded');
-                                                                                            var bLazy = new Blazy();
-                                                                                            console.log('blazy.min.js Initialized');
-                                                                                        });
-                                                                            });
-                                                                });
-                                                    });
-                                        });
+                    getScript("js/lazyloader.min.js",
+                        function chainScriptInit() {
+                            LazyLoader(new Array('js/jquery.min.js'),
+                                    function chainScript() {
+                                            LazyLoader(new Array("js/jquery.dropotron.min.js"),
+                                                    function chainScript1() {
+                                                            LazyLoader(new Array("js/skel.min.js"),
+                                                                    function chainScript2() {
+                                                                        LazyLoader(new Array("js/skel-layers.min.js"),
+                                                                                function chainScript3() {
+                                                                                    LazyLoader(new Array("js/init.min.js"),
+                                                                                            function chainScript4() {
+                                                                                                LazyLoader(new Array("js/goToTop.min.js"), console.log('goToTop.min.js Loaded'));
+                                                                                                LazyLoader(new Array("js/blazy.min.js"),
+                                                                                                        function initBLazy() {
+                                                                                                            console.log('blazy.min.js Loaded');
+                                                                                                            var bLazy = new Blazy({
+                                                                                                                success: function () {
+                                                                                                                    console.log('blazy.min.js Image Lazy Loaded');
+                                                                                                                    // Image has loaded
+                                                                                                                    document.getElementById('loadedPage').className += ' postloaded';
+                                                                                                                }
+                                                                                                            });
+                                                                                                        });
+                                                                                            });
+                                                                                });
+                                                                    });
+                                            });
                             });
+                        });
                 }
                 if (window.addEventListener)
                     window.addEventListener("load", scriptAtOnload, false);
@@ -377,6 +359,18 @@
                     window.attachEvent("onload", scriptAtOnload);
                 else window.onload = scriptAtOnload;
             })();
+
+            /*********************************************************************************/
+            /* Preven FOUT when using JavaScript                                             */
+            /*********************************************************************************/
+            var css = "#loadedPage:not(.postloaded), #loadedPage:not(.postloaded) A:link,#loadedPage:not(.postloaded) A:visited {opacity: 0;}" +
+                    ".loadicon {background: #67B5C1 url(images/gears-gif-preloader.gif) center fixed no-repeat;background-size: auto 40%;}" +
+                    "img.b-lazy {display: block;}";
+            var s = document.createElement('style'); s.type='text/css';
+            if (s.styleSheet){s.styleSheet.cssText = css;} else {s.appendChild(document.createTextNode(css));}
+            var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(s, h);
+            var l = document.createElement('link'); l.rel='stylesheet';l.href="css/style.min.css";l.type='text/css';
+            h.parentNode.insertBefore(l, h);
         </script>
 	</body>
 </html>
