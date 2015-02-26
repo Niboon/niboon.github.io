@@ -13,7 +13,7 @@
 		/*********************************************************************************/
 			/* If Javascript is not present, don't show loader */
 			.no-js #loader { display: none;  }
-			.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+			.js #loader { display: block; position: fixed; left: 100px; top: 0; }
 			.loadicon {
 				position: fixed;
 				left: 0;
@@ -23,6 +23,7 @@
 				opacity: 0.99;
 				z-index: 999999;
 				background: url(images/gears-gif-preloader.gif) center no-repeat #67B5C1;
+                background-size: auto 40%;
 			}
 		</style>
         <!--<script>-->
