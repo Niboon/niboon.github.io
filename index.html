@@ -114,7 +114,7 @@
 						
 						<!-- Image -->
 							<a href="#" class="image featured">
-								<img src="images/pic01.jpg" alt="" />
+								<img class="b-lazy" src="images/spacer.gif" alt="" data-src="images/pic01.jpg"/>
 							</a>
 						
 						<!-- Features -->
@@ -184,7 +184,7 @@
 						<div class="row 150%">
 							<div class="4u">
 								<section class="highlight">
-									<a href="#Contact" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#Contact" class="image featured"><img class="b-lazy" src="images/spacer.gif" data-src="images/pic02.jpg" alt="" /></a>
 									<h3><a href="#Contact">Shaw Communications</a></h3>
 									<p>Custom Analytical Dashboard Development.</p>
 									<ul class="actions">
@@ -194,7 +194,7 @@
 							</div>
 							<div class="4u">
 								<section class="highlight">
-									<a href="#Contact" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="#Contact" class="image featured"><img class="b-lazy" src="images/spacer.gif" data-src="images/pic03.jpg" alt="" /></a>
 									<h3><a href="#Contact">QuickPlay Media</a></h3>
 									<p>Video Streaming Android Application.</p>
 									<ul class="actions">
@@ -204,7 +204,7 @@
 							</div>
 							<div class="4u">
 								<section class="highlight">
-									<a href="#Contact" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+									<a href="#Contact" class="image featured"><img class="b-lazy" src="images/spacer.gif" data-src="images/pic04.jpg" alt="" /></a>
 									<h3><a href="#Contact">Proax Technologies</a></h3>
 									<p>B2B E-Commerce Development.</p>
 									<ul class="actions">
@@ -341,22 +341,28 @@
                 }
                 function scriptAtOnload() {
                     getScript('js/jquery.min.js',
-                    function chainScript() {
-                        getScript("js/jquery.dropotron.min.js",
-                        function chainScript1() {
-                            getScript("js/skel.min.js",
-                            function chainScript2() {
-                                getScript("js/init.min.js",
-                                function chainScript3() {
-                                    getScript("js/jquery.dropotron.min.js",
-                                    function chainScript4() {
-                                        getScript("js/preLoadIcon.min.js",console.log('preLoadIcon.min.js Loaded'));
-                                        getScript("js/goToTop.min.js",console.log('goToTop.min.js Loaded'));
-                                    });
-                                });
+                        function chainScript() {
+                            getScript("js/jquery.dropotron.min.js",
+                                function chainScript1() {
+                                    getScript("js/skel.min.js",
+                                        function chainScript2() {
+                                            getScript("js/init.min.js",
+                                                function chainScript3() {
+                                                    getScript("js/jquery.dropotron.min.js",
+                                                        function chainScript4() {
+                                                            getScript("js/preLoadIcon.min.js",console.log('preLoadIcon.min.js Loaded'));
+                                                            getScript("js/goToTop.min.js",console.log('goToTop.min.js Loaded'));
+                                                            getScript("js/blazy.min.js",
+                                                                function initBLazy() {
+                                                                    console.log('blazy.min.js Loaded');
+                                                                    var bLazy = new Blazy();
+                                                                    console.log('blazy.min.js Initialized');
+                                                            });
+                                                        });
+                                                });
+                                        });
                             });
                         });
-                    });
                 }
                 if (window.addEventListener)
                     window.addEventListener("load", scriptAtOnload, false);
