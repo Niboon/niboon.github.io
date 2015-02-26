@@ -324,18 +324,18 @@
                 function scriptAtOnload() {
                     getScript("js/lazyloader.min.js",
                         function chainScriptInit() {
-                            LazyLoader(['css/critical.min.css','js/jquery.min.js'],
+                            LazyLoader(['js/jquery.min.js'],
                                     function chainScript() {
-                                            LazyLoader(new Array("js/jquery.dropotron.min.js"),
+                                            LazyLoader(["js/jquery.dropotron.min.js"],
                                                     function chainScript1() {
-                                                            LazyLoader(new Array("js/skel.min.js"),
+                                                            LazyLoader(["js/skel.min.js"],
                                                                     function chainScript2() {
-                                                                        LazyLoader(new Array("js/skel-layers.min.js"),
+                                                                        LazyLoader(["js/skel-layers.min.js"],
                                                                                 function chainScript3() {
-                                                                                    LazyLoader(new Array("js/init.min.js"),
+                                                                                    LazyLoader(["js/init.min.js"],
                                                                                             function chainScript4() {
-                                                                                                LazyLoader(new Array("js/goToTop.min.js"), console.log('goToTop.min.js Loaded'));
-                                                                                                LazyLoader(new Array("js/blazy.min.js"),
+                                                                                                LazyLoader(["js/goToTop.min.js"], console.log('goToTop.min.js Loaded'));
+                                                                                                LazyLoader(["js/blazy.min.js"],
                                                                                                         function initBLazy() {
                                                                                                             console.log('blazy.min.js Loaded');
                                                                                                             var bLazy = new Blazy({
@@ -365,7 +365,15 @@
             /*********************************************************************************/
             var css = "#loadedPage:not(.postloaded), #loadedPage:not(.postloaded) A:link,#loadedPage:not(.postloaded) A:visited {opacity: 0;}" +
                     ".loadicon {background: #67B5C1 url(images/gears-gif-preloader.gif) center fixed no-repeat;background-size: auto 40%;}" +
-                    "img.b-lazy {display: block;}";
+                    "img.b-lazy {display: block;}" +
+                    "body,input,select,textarea{font-family:serif;font-weight:400;color:#919499}h1,h2,h3,h4,h5,h6{font-weight:700;color:#484d55}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:inherit;text-decoration:none}" +
+                    "a{text-decoration:underline;color:#717479;-moz-transition:color .25s ease-in-out;-webkit-transition:color .25s ease-in-out;-o-transition:color .25s ease-in-out;-ms-transition:color .25s ease-in-out;transition:color .25s ease-in-out}" +
+                    "b,strong{font-weight:700;color:#484d55}blockquote{border-left:solid .5em #ddd;padding:1em 0 1em 2em;font-style:italic}em,i{font-style:italic}hr{border:0;border-top:solid 1px #ddd}sub{position:relative;top:.5em;font-size:.8em}" +
+                    "sup{position:relative;top:-.5em;font-size:.8em}.nobr{white-space:nowrap}br.clear{clear:both}blockquote,dl,form,ol,p,table,ul{margin-bottom:2em}article,section{margin-bottom:3em}article:last-child,article>:last-child,section:last-child,section>:last-child{margin-bottom:0}" +
+                    "header.style1{text-align:center}header.style1 h2{font-weight:700}header.style1 p{color:#b1b4b9}ul.default{list-style:disc;padding-left:1em}ul.default li{padding-left:.5em}.wrapper{position:relative}.wrapper .title{position:absolute;top:0;left:50%;text-align:center;text-transform:uppercase;display:block;font-weight:700;letter-spacing:.25em;border-radius:2px 2px 0 0}" +
+                    ".wrapper.style1{background:url(images/overlay.png) #73caca;color:#eee;color:rgba(255,255,255,.75)}.wrapper.style1 .title{background:url(images/overlay.png) #73caca;color:#fff}.wrapper.style1 a,.wrapper.style1 b,.wrapper.style1 h1,.wrapper.style1 h2,.wrapper.style1 h3,.wrapper.style1 h4,.wrapper.style1 h5,.wrapper.style1 h6,.wrapper.style1 strong{color:#fff}" +
+                    "#header-wrapper{background:#272d3b;background-size:cover}#header-wrapper:before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:url(images/overlay.png)}#logo h1{font-weight:900;text-transform:uppercase;color:#fff}#logo p{color:#eee;color:rgba(255,255,255,.5);text-transform:uppercase}#intro>.style2{font-weight:700;color:#fff;border-radius:.35em;box-shadow:inset 0 0 1px 1px rgba(255,255,255,.25)}" +
+                    "#intro>.style2 a{color:inherit;text-decoration:none}#softwareCategories{max-width:100%}";
             var s = document.createElement('style'); s.type='text/css';
             if (s.styleSheet){s.styleSheet.cssText = css;} else {s.appendChild(document.createTextNode(css));}
             var b = document.getElementsByTagName('body')[0]; b.parentNode.insertBefore(s, b);
