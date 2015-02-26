@@ -357,7 +357,17 @@
                 }
                 function scriptAtOnload() {
                     getScript('js/jquery.min.js',function(){
-                        getScript("js/defer.min.js");
+//                        getScript("js/defer.min.js");
+                        getScript("js/jquery.dropotron.min.js",function(){
+                            getScript("js/skel.min.js",function(){
+                                getScript("js/init.js",function(){
+                                    getScript("js/jquery.dropotron.min.js",function(){
+                                        getScript("js/preLoadIcon.js");
+                                        getScript("js/goToTop.js");
+                                    })
+                                })
+                            })
+                        })
                     });
                 }
                 if (window.addEventListener)
