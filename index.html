@@ -38,9 +38,9 @@
             if (raf) raf(cb);
             else window.addEventListener('load', cb);
         </script>
-		<!--<noscript>-->
-			<!--<link rel="stylesheet" href="css/defer.min.css"/>-->
-		<!--</noscript>-->
+		<noscript>
+			<link rel="stylesheet" href="css/defer.min.css"/>
+		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 
         <!--<script src="js/jquery.min.js"></script>-->
@@ -366,10 +366,10 @@
                                     getScript("js/jquery.dropotron.min.js",function(){
                                         getScript("js/preLoadIcon.js");
                                         getScript("js/goToTop.js");
-                                    })
-                                })
-                            })
-                        })
+                                    });
+                                });
+                            });
+                        });
                     });
                 }
                 if (window.addEventListener)
