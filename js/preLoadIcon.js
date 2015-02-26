@@ -4,9 +4,10 @@
 jQuery(document).ready(function() {
     //grab the loading icon screen
     var loading = jQuery(".loadicon");
-
+    var page = jQuery('#loadedPage');
     //remove the loading icon screen when page is ready
     jQuery(window).ready(function () {
-        loading.delay(550).fadeOut(600);
+        loading.delay(500).fadeOut(1500);
+        page.css('visibility','visible');
     });
 });
