@@ -39,7 +39,7 @@
 					side: 'top',
 					height: 44,
 					width: 'auto',
-					html: '<!--suppress HtmlUnknownAnchorTarget --><a href="#Top" class="cd-top"></a>'
+					html: '<a href="#Top" class="cd-top"></a>'
 				},
 				toTopButton: {
 					breakpoints: 'mobile',
@@ -47,7 +47,7 @@
 					side: 'top',
 					height: 44,
 					width: 'auto',
-					html: '<!--suppress HtmlUnknownAnchorTarget --><a href="#Top" class="cd-top"></a>'
+					html: '<a href="#Top" class="cd-top"></a>'
 				}
 			}
 		}

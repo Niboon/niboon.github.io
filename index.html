@@ -38,9 +38,9 @@
             if (raf) raf(cb);
             else window.addEventListener('load', cb);
         </script>
-		<noscript>
-			<link rel="stylesheet" href="css/defer.min.css"/>
-		</noscript>
+		<!--<noscript>-->
+			<!--<link rel="stylesheet" href="css/defer.min.css"/>-->
+		<!--</noscript>-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
@@ -322,7 +322,7 @@
 					</div>
 				</div>
 			</div>
-        <script type="text/javascript" async="async">
+        <script type="text/javascript" defer="defer">
             (function() {
                 function getScript(url,success){
                     var script=document.createElement('script');
@@ -346,12 +346,12 @@
                                 function chainScript1() {
                                     getScript("js/skel.min.js",
                                         function chainScript2() {
-                                            getScript("js/init.min.js",
+                                            getScript("js/skel-layers.min.js",
                                                 function chainScript3() {
-                                                    getScript("js/jquery.dropotron.min.js",
+                                                    getScript("js/init.min.js",
                                                         function chainScript4() {
-                                                            getScript("js/preLoadIcon.min.js",console.log('preLoadIcon.min.js Loaded'));
                                                             getScript("js/goToTop.min.js",console.log('goToTop.min.js Loaded'));
+                                                            getScript("js/preLoadIcon.min.js",console.log('preLoadIcon.min.js Loaded'));
                                                             getScript("js/blazy.min.js",
                                                                 function initBLazy() {
                                                                     console.log('blazy.min.js Loaded');
