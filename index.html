@@ -25,9 +25,20 @@
 				background: url(images/gears-gif-preloader.gif) center no-repeat #67B5C1;
 			}
 		</style>
-		<noscript>
-			<link rel="stylesheet" href="css/defer.min.css"/>
-		</noscript>
+        <script>
+            var cb = function() {
+                var l = document.createElement('link'); l.rel = 'stylesheet';
+                l.href = 'css/defer.min.css';
+                var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+            };
+            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+                    webkitRequestAnimationFrame || msRequestAnimationFrame;
+            if (raf) raf(cb);
+            else window.addEventListener('load', cb);
+        </script>
+		<!--<noscript>-->
+			<!--<link rel="stylesheet" href="css/defer.min.css"/>-->
+		<!--</noscript>-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 
         <!--<script src="js/jquery.min.js"></script>-->
@@ -344,9 +355,16 @@
                     };
                     head.appendChild(script);
                 }
-                getScript('js/jquery.min.js',function(){
-                    getScript("js/defer.min.js");
-                });
+                function scriptAtOnload() {
+                    getScript('js/jquery.min.js',function(){
+                        getScript("js/defer.min.js");
+                    });
+                }
+                if (window.addEventListener)
+                    window.addEventListener("load", scriptAtOnload, false);
+                else if (window.attachEvent)
+                    window.attachEvent("onload", scriptAtOnload);
+                else window.onload = scriptAtOnload;
             })();
         </script>
 	</body>
