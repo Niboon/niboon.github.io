@@ -1,12 +1,3 @@
-@charset "UTF-8";
-@import "font-awesome.min.css";
-
-/*
-	Escape Velocity by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -16,20 +7,6 @@ body, input, textarea, select
     font-family: sans-serif;
     font-weight: 400;
     color: #919499;
-}
-
-body.is-loading *
-{
-    -moz-transition: none !important;
-    -webkit-transition: none !important;
-    -o-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important;
-    -moz-animation: none !important;
-    -webkit-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
 }
 
 h1,h2,h3,h4,h5,h6
@@ -53,11 +30,6 @@ a
     -o-transition: color .25s ease-in-out;
     -ms-transition: color .25s ease-in-out;
     transition: color .25s ease-in-out;
-}
-
-a:hover
-{
-    text-decoration: none;
 }
 
 strong, b
@@ -161,57 +133,6 @@ ul.default li
     padding-left: 0.5em;
 }
 
-ul.style2
-{
-}
-
-ul.style2 li
-{
-    border-top: solid 1px #eee;
-    padding: 1.5em 0 0 0;
-    margin: 1.5em 0 0 0;
-}
-
-ul.style2 li:first-child
-{
-    border-top: 0;
-    padding-top: 0;
-    margin-top: 0;
-}
-
-ul.style3
-{
-}
-
-ul.style3 li
-{
-    border-top: solid 1px #eee;
-    padding: 0.5em 0 0 0;
-    margin: 0.5em 0 0 0;
-}
-
-ul.style3 li:first-child
-{
-    border-top: 0;
-    padding-top: 0;
-    margin-top: 0;
-}
-
-ol
-{
-}
-
-ol.default
-{
-    list-style: decimal;
-    padding-left: 1.25em;
-}
-
-ol.default li
-{
-    padding-left: 0.25em;
-}
-
 /*********************************************************************************/
 /* Wrappers                                                                      */
 /*********************************************************************************/
@@ -285,33 +206,6 @@ ol.default li
 .wrapper.style1 a
 {
     color: #fff;
-}
-
-.wrapper.style2
-{
-    background: #fff;
-}
-
-.wrapper.style2 .title
-{
-    background: #fff;
-    color: #484d55;
-}
-
-.wrapper.style3
-{
-    background: #f3f3f3 url('images/overlay.png');
-}
-
-.wrapper.style3 .title
-{
-    background: #f3f3f3 url('images/overlay.png');
-    color: #484d55;
-}
-
-.wrapper.style3 .image
-{
-    border: solid 10px #fff;
 }
 
 #header-wrapper
