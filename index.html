@@ -359,15 +359,15 @@
                     window.attachEvent("onload", scriptAtOnload);
                 else window.onload = scriptAtOnload;
             })();
-//
-//            /*********************************************************************************/
-//            /* Prevent FOUT when using JavaScript                                             */
-//            /*********************************************************************************/
-//            var css = "#loadedPage:not(.postloaded), #loadedPage:not(.postloaded) A:link,#loadedPage:not(.postloaded) A:visited {opacity: 0;}" +
-//                    ".loadicon {background: #67B5C1 url(images/gears-gif-preloader.gif) center fixed no-repeat;background-size: auto 40%;}" +
-//                    "img.b-lazy {display: block;}";
-//            var s = document.createElement('style'); s.type='text/css';
-//            if (s.styleSheet){s.styleSheet.cssText = css;} else {s.appendChild(document.createTextNode(css));}
+
+            /*********************************************************************************/
+            /* Prevent FOUT when using JavaScript                                             */
+            /*********************************************************************************/
+            var css = "#loadedPage:not(.postloaded), #loadedPage:not(.postloaded) A:link,#loadedPage:not(.postloaded) A:visited {opacity: 0;}" +
+                    ".loadicon {background: #67B5C1 url(images/gears-gif-preloader.gif) center fixed no-repeat;background-size: auto 40%;}" +
+                    "img.b-lazy {display: block;}";
+            var s = document.createElement('style'); s.type='text/css';
+            if (s.styleSheet){s.styleSheet.cssText = css;} else {s.appendChild(document.createTextNode(css));}
 //            var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(s, h);
 //            var l = document.createElement('link'); l.rel='stylesheet';l.href="css/critical.min.css";l.type='text/css';
 //            h.parentNode.insertBefore(l, h);
