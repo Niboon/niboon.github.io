@@ -27,9 +27,11 @@
 		</style>
         <script>
             var cb = function() {
+                var ns = document.createElement('noscript');
                 var l = document.createElement('link'); l.rel = 'stylesheet';
                 l.href = 'css/defer.min.css';
-                var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+                ns.appendChild(l);
+                var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(ns, h);
             };
             var raf = requestAnimationFrame || mozRequestAnimationFrame ||
                     webkitRequestAnimationFrame || msRequestAnimationFrame;
