@@ -25,22 +25,71 @@
 				background: url(images/gears-gif-preloader.gif) center no-repeat #67B5C1;
 			}
 		</style>
-        <script>
-            var cb = function() {
-                var ns = document.createElement('noscript');
-                var l = document.createElement('link'); l.rel = 'stylesheet';
-                l.href = 'css/defer.min.css';
-                ns.appendChild(l);
-                var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(ns, h);
-            };
-            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                    webkitRequestAnimationFrame || msRequestAnimationFrame;
-            if (raf) raf(cb);
-            else window.addEventListener('load', cb);
+        <script type="text/javascript" async="async">
+            (function() {
+                function getScript(url,success){
+                    var script=document.createElement('script');
+                    script.src=url;
+                    var head=document.getElementsByTagName('head')[0],
+                            done=false;
+                    script.onload=script.onreadystatechange = function(){
+                        if ( !done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete') ) {
+                            done=true;
+                            if (success) {success();}
+                            script.onload = script.onreadystatechange = null;
+                            head.removeChild(script);
+                        }
+                    };
+                    head.appendChild(script);
+                }
+                function scriptAtOnload() {
+                    getScript('js/jquery.min.js',
+                            function chainScript() {
+                                getScript("js/jquery.dropotron.min.js",
+                                        function chainScript1() {
+                                            getScript("js/skel.min.js",
+                                                    function chainScript2() {
+                                                        getScript("js/skel-layers.min.js",
+                                                                function chainScript3() {
+                                                                    getScript("js/init.min.js",
+                                                                            function chainScript4() {
+                                                                                getScript("js/goToTop.min.js",console.log('goToTop.min.js Loaded'));
+                                                                                getScript("js/preLoadIcon.min.js",console.log('preLoadIcon.min.js Loaded'));
+                                                                                getScript("js/blazy.min.js",
+                                                                                        function initBLazy() {
+                                                                                            console.log('blazy.min.js Loaded');
+                                                                                            var bLazy = new Blazy();
+                                                                                            console.log('blazy.min.js Initialized');
+                                                                                        });
+                                                                            });
+                                                                });
+                                                    });
+                                        });
+                            });
+                }
+                if (window.addEventListener)
+                    window.addEventListener("load", scriptAtOnload, false);
+                else if (window.attachEvent)
+                    window.attachEvent("onload", scriptAtOnload);
+                else window.onload = scriptAtOnload;
+            })();
         </script>
-		<noscript>
-			<link rel="stylesheet" href="css/defer.min.css"/>
-		</noscript>
+        <!--<script>-->
+            <!--var cb = function() {-->
+                <!--var ns = document.createElement('noscript');-->
+                <!--var l = document.createElement('link'); l.rel = 'stylesheet';-->
+                <!--l.href = 'css/defer.min.css';-->
+                <!--ns.appendChild(l);-->
+                <!--var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(ns, h);-->
+            <!--};-->
+            <!--var raf = requestAnimationFrame || mozRequestAnimationFrame ||-->
+                    <!--webkitRequestAnimationFrame || msRequestAnimationFrame;-->
+            <!--if (raf) raf(cb);-->
+            <!--else window.addEventListener('load', cb);-->
+        <!--</script>-->
+		<!--<noscript>-->
+			<!--<link rel="stylesheet" href="css/defer.min.css"/>-->
+		<!--</noscript>-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
@@ -322,54 +371,5 @@
 					</div>
 				</div>
 			</div>
-        <script type="text/javascript" async="async">
-            (function() {
-                function getScript(url,success){
-                    var script=document.createElement('script');
-                    script.src=url;
-                    var head=document.getElementsByTagName('head')[0],
-                            done=false;
-                    script.onload=script.onreadystatechange = function(){
-                        if ( !done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete') ) {
-                            done=true;
-                            if (success) {success();}
-                            script.onload = script.onreadystatechange = null;
-                            head.removeChild(script);
-                        }
-                    };
-                    head.appendChild(script);
-                }
-                function scriptAtOnload() {
-                    getScript('js/jquery.min.js',
-                        function chainScript() {
-                            getScript("js/jquery.dropotron.min.js",
-                                function chainScript1() {
-                                    getScript("js/skel.min.js",
-                                        function chainScript2() {
-                                            getScript("js/skel-layers.min.js",
-                                                function chainScript3() {
-                                                    getScript("js/init.min.js",
-                                                        function chainScript4() {
-                                                            getScript("js/goToTop.min.js",console.log('goToTop.min.js Loaded'));
-                                                            getScript("js/preLoadIcon.min.js",console.log('preLoadIcon.min.js Loaded'));
-//                                                            getScript("js/blazy.min.js",
-//                                                                function initBLazy() {
-//                                                                    console.log('blazy.min.js Loaded');
-//                                                                    var bLazy = new Blazy();
-//                                                                    console.log('blazy.min.js Initialized');
-//                                                            });
-                                                        });
-                                                });
-                                        });
-                            });
-                        });
-                }
-                if (window.addEventListener)
-                    window.addEventListener("load", scriptAtOnload, false);
-                else if (window.attachEvent)
-                    window.attachEvent("onload", scriptAtOnload);
-                else window.onload = scriptAtOnload;
-            })();
-        </script>
 	</body>
 </html>
