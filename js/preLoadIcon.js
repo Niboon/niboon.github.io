@@ -7,7 +7,11 @@ jQuery(document).ready(function() {
     var page = jQuery('#loadedPage');
     //remove the loading icon screen when page is ready
     jQuery(window).ready(function () {
-        loading.delay(500).fadeOut(1500);
-        page.css('visibility','visible');
+        setTimeout(function(){
+            loading.fadeOut(300);
+        }, 550);
+        setTimeout(function(){
+            page.fadeIn(450);
+        }, 400);
     });
 });
