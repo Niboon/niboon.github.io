@@ -162,6 +162,24 @@
 					
 					</div>
 				</div>
+
+            <script src="js/jquery.min.js"></script>
+
+            <script type="text/javascript">
+                function addScript(src) {
+                    var element = document.createElement("script");
+                    element.src = src;
+                    document.body.appendChild(element);
+                }
+                function scriptAtOnload() {
+                    addScript("js/defer.min.js");
+                }
+                if (window.addEventListener)
+                    window.addEventListener("load", scriptAtOnload, false);
+                else if (window.attachEvent)
+                    window.attachEvent("onload", scriptAtOnload);
+                else window.onload = scriptAtOnload;
+            </script>
 			
 			<!-- Highlights -->        
 			<a name="Highlights" class="bookmark"></a>
@@ -309,22 +327,5 @@
 					</div>
 				</div>
 			</div>
-
-        <script src="js/jquery.min.js"></script>
-        <script type="text/javascript">
-            function addScript(src) {
-                var element = document.createElement("script");
-                element.src = src;
-                document.body.appendChild(element);
-            }
-            function scriptAtOnload() {
-                addScript("js/defer.min.js");
-            }
-            if (window.addEventListener)
-                window.addEventListener("load", scriptAtOnload, false);
-            else if (window.attachEvent)
-                window.attachEvent("onload", scriptAtOnload);
-            else window.onload = scriptAtOnload;
-        </script>
 	</body>
 </html>
