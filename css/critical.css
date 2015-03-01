@@ -24,7 +24,34 @@ p, ul, ol, dl
 #header-wrapper
 {
     padding: 6em 2em 6em 2em;
-    background-color: rgba(42, 48, 62, 1);
+    background: url('images/banner.jpg') center center;
+    background-size: cover;
+}
+.wrapper .title:before
+{
+    content: '';
+    position: absolute;
+    bottom: -38px;
+    left: -35px;
+    width: 35px;
+    height: 38px;
+    background-image: url('css/images/shadow.png');
+}
+
+.wrapper .title:after
+{
+    content: '';
+    position: absolute;
+    bottom: -38px;
+    right: -35px;
+    width: 35px;
+    height: 38px;
+    background-image: url('css/images/shadow.png');
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 #logo h1
 {
@@ -70,6 +97,16 @@ p, ul, ol, dl
 {
     background: #73caca;
     color: #fff;
+}
+.wrapper.style2
+{
+    background: #fff;
+}
+
+.wrapper.style2 .title
+{
+    background: #fff;
+    color: #484d55;
 }
 
 
@@ -262,3 +299,23 @@ and (min-width : 737px)
         color: #fff;
     }
 }
+
+/*1000px*/
+@media only screen
+and (min-width : 900px)
+{
+    /*********************************************************************************/
+    /* Header                                                                        */
+    /*********************************************************************************/
+
+    #header
+    {
+        padding: 10em 0 !important;
+    }
+
+    .homepage #header
+    {
+        padding: 26em 0 !important;
+    }
+}
+
