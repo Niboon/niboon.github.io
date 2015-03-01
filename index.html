@@ -363,11 +363,14 @@
 //            /* Preload Spinner                                                               */
 //            /*********************************************************************************/
 //            var css = "#loadedPage:not(.postloaded), #loadedPage:not(.postloaded) A:link,#loadedPage:not(.postloaded) A:visited {opacity: 0;}" +
-//                    ".loadicon {background: #67B5C1 url(images/gears-gif-preloader.gif) center center fixed no-repeat;background-size: auto 40%;}" +
-//                    "img.b-lazy {display: block;}";
-//            var s = document.createElement('style'); s.type='text/css';
-//            if (s.styleSheet){s.styleSheet.cssText = css;} else {s.appendChild(document.createTextNode(css));}
-//            var b = document.getElementsByTagName('body')[0]; b.parentNode.insertBefore(s, b);
+//                    ".loadicon {background: #67B5C1 url(images/gears-gif-preloader.gif) center center fixed no-repeat;background-size: auto 40%;}";
+//            /*********************************************************************************/
+//            /* Image Lazy Loader                                                             */
+//            /*********************************************************************************/
+            var css ="img.b-lazy {display: block;}";
+            var s = document.createElement('style'); s.type='text/css';
+            if (s.styleSheet){s.styleSheet.cssText = css;} else {s.appendChild(document.createTextNode(css));}
+            var b = document.getElementsByTagName('body')[0]; b.parentNode.insertBefore(s, b);
         </script>
 	</body>
 </html>
