@@ -334,6 +334,8 @@
                                                                                 function chainScript3() {
                                                                                     LazyLoader(["js/init.min.js"],
                                                                                             function chainScript4() {
+                                                                                                // Image has loaded
+                                                                                                document.getElementById('loadedPage').className += ' postloaded';
                                                                                                 LazyLoader(["js/goToTop.min.js"], console.log('goToTop.min.js Loaded'));
                                                                                                 LazyLoader(["js/blazy.min.js"],
                                                                                                         function initBLazy() {
@@ -341,8 +343,6 @@
                                                                                                             var bLazy = new Blazy({
                                                                                                                 success: function () {
                                                                                                                     console.log('blazy.min.js Image Lazy Loaded');
-                                                                                                                    // Image has loaded
-                                                                                                                    document.getElementById('loadedPage').className += ' postloaded';
                                                                                                                 }
                                                                                                             });
                                                                                                         });
@@ -359,15 +359,11 @@
                     window.attachEvent("onload", scriptAtOnload);
                 else window.onload = scriptAtOnload;
             })();
-//            /*********************************************************************************/
-//            /* Preload Spinner                                                               */
-//            /*********************************************************************************/
-//            var css = "#loadedPage:not(.postloaded), #loadedPage:not(.postloaded) A:link,#loadedPage:not(.postloaded) A:visited {opacity: 0;}" +
-//                    ".loadicon {background: #67B5C1 url(images/gears-gif-preloader.gif) center center fixed no-repeat;background-size: auto 40%;}";
             /*********************************************************************************/
-            /* Image Lazy Loader                                                             */
+            /* Preload Spinner                                                               */
             /*********************************************************************************/
-            var css ="img.b-lazy {display: block;}";
+            var css = "#loadedPage:not(.postloaded), #loadedPage:not(.postloaded) A:link,#loadedPage:not(.postloaded) A:visited {opacity: 0;}" +
+                    ".loadicon {background: #67B5C1 center center fixed no-repeat;background-size: auto 40%;} @media (max-width:737px){.loadicon {background-image: url(images/gears-gif-preloader.gif);}} @media (min-width:737px){.loadicon {background-image: url(images/gears-gif-preloader-mobile.gif);}}img.b-lazy {display: block;}";
             var s = document.createElement('style'); s.type='text/css';
             if (s.styleSheet){s.styleSheet.cssText = css;} else {s.appendChild(document.createTextNode(css));}
             var b = document.getElementsByTagName('body')[0]; b.parentNode.insertBefore(s, b);
