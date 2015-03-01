@@ -71,6 +71,9 @@ p, ul, ol, dl
     background: #73caca;
     color: #fff;
 }
+
+
+/*Mobile*/
 @media only screen
 and (min-width : 200px)
 and (max-width : 737px)
@@ -117,6 +120,8 @@ and (max-width : 737px)
         display: none;
     }
 }
+
+/*desktop*/
 @media only screen
 and (min-device-width : 737px)
 and (min-width : 737px)

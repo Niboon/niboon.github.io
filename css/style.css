@@ -11,7 +11,7 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
-	body, input, textarea, select
+	input, textarea, select
 	{
 		font-family: serif;
 		font-weight: 400;
@@ -542,23 +542,23 @@
 /* Wrappers                                                                      */
 /*********************************************************************************/
 
-	.wrapper
-	{
-		position: relative;
-	}
+	/*.wrapper*/
+	/*{*/
+		/*position: relative;*/
+	/*}*/
 
-		.wrapper .title
-		{
-			position: absolute;
-			top: 0;
-			left: 50%;
-			text-align: center;
-			text-transform: uppercase;
-			display: block;
-			font-weight: 700;
-			letter-spacing: 0.25em;
-            border-radius: 2px 2px 0 0;
-		}
+		/*.wrapper .title*/
+		/*{*/
+			/*position: absolute;*/
+			/*top: 0;*/
+			/*left: 50%;*/
+			/*text-align: center;*/
+			/*text-transform: uppercase;*/
+			/*display: block;*/
+			/*font-weight: 700;*/
+			/*letter-spacing: 0.25em;*/
+            /*border-radius: 2px 2px 0 0;*/
+		/*}*/
 		
 		.wrapper .title:before
 		{
@@ -590,14 +590,14 @@
 		.wrapper.style1
 		{
 			background: #73caca url('images/overlay.png');
-			color: #eee;
-			color: rgba(255,255,255,0.75);
+			/*color: #eee;*/
+			/*color: rgba(255,255,255,0.75);*/
 		}
 		
 			.wrapper.style1 .title
 			{
 				background: #73caca url('images/overlay.png');
-				color: #fff;
+				/*color: #fff;*/
 			}
 		
 			.wrapper.style1 h1,
@@ -771,28 +771,28 @@
 				{
 					background: #3d4249 url('images/overlay.png');
 				}
-		
+		/**/
 /*********************************************************************************/
 /* Logo                                                                          */
 /*********************************************************************************/
 
-	#logo
-	{
-	}
-	
-		#logo h1
-		{
-			font-weight: 900;
-			text-transform: uppercase;
-			color: #fff;
-		}
-		
-		#logo p
-		{
-			color: #eee;
-			color: rgba(255,255,255,0.5);
-			text-transform: uppercase;
-		}
+	/*#logo*/
+	/*{*/
+	/*}*/
+	/**/
+		/*#logo h1*/
+		/*{*/
+			/*font-weight: 900;*/
+			/*text-transform: uppercase;*/
+			/*color: #fff;*/
+		/*}*/
+		/**/
+		/*#logo p*/
+		/*{*/
+			/*color: #eee;*/
+			/*color: rgba(255,255,255,0.5);*/
+			/*text-transform: uppercase;*/
+		/*}*/
 
 
 /*********************************************************************************/

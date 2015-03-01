@@ -8,7 +8,7 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
-	body, input, select, textarea
+	input, select, textarea
 	{
 		line-height: 1.5em;
 		font-size: 10.5pt;
@@ -164,15 +164,15 @@
 /* Mobile UI                                                                     */
 /*********************************************************************************/
 
-	#titleBar
-	{
-		background: none;
-	}
+/*#titleBar*/
+/*{*/
+    /*background: none;*/
+/*}*/
 
-		#titleBar .title
-		{
-			display: none;
-		}
+		/*#titleBar .title*/
+		/*{*/
+			/*display: none;*/
+		/*}*/
 
 		#titleBar .toggle
 		{
@@ -308,34 +308,34 @@
 /* Logo                                                                          */
 /*********************************************************************************/
 
-	#logo
-	{
-		text-align: center;
-	}
+	/*#logo*/
+	/*{*/
+		/*text-align: center;*/
+	/*}*/
 
-		#logo h1
-		{
-			font-size: 1.5em;
-			letter-spacing: 0.2em;
-		}
-		
-		#logo p
-		{
-			margin: 1.25em 0 0 0;
-			display: block;
-			letter-spacing: 0.2em;
-			font-size: 0.9em;
-		}
+		/*#logo h1*/
+		/*{*/
+			/*font-size: 1.5em;*/
+			/*letter-spacing: 0.2em;*/
+		/*}*/
+		/**/
+		/*#logo p*/
+		/*{*/
+			/*margin: 1.25em 0 0 0;*/
+			/*display: block;*/
+			/*letter-spacing: 0.2em;*/
+			/*font-size: 0.9em;*/
+		/*}*/
 	
 /*********************************************************************************/
 /* Nav                                                                           */
 /*********************************************************************************/
 
-	#nav
-	{
-		display: none;
-	}
-	
+	/*#nav*/
+	/*{*/
+		/*display: none;*/
+	/*}*/
+	/**/
 /*********************************************************************************/
 /* Intro                                                                         */
 /*********************************************************************************/
