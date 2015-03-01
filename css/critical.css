@@ -27,32 +27,6 @@ p, ul, ol, dl
     background: url('images/banner.jpg') center center;
     background-size: cover;
 }
-.wrapper .title:before
-{
-    content: '';
-    position: absolute;
-    bottom: -38px;
-    left: -35px;
-    width: 35px;
-    height: 38px;
-    background-image: url('css/images/shadow.png');
-}
-
-.wrapper .title:after
-{
-    content: '';
-    position: absolute;
-    bottom: -38px;
-    right: -35px;
-    width: 35px;
-    height: 38px;
-    background-image: url('css/images/shadow.png');
-    -moz-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -ms-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
 #logo h1
 {
     font-weight: 900;
@@ -86,6 +60,50 @@ p, ul, ol, dl
     color: #eee;
     color: rgba(255,255,255,0.5);
     font: inherit;
+}
+.wrapper
+{
+    position: relative;
+}
+
+.wrapper .title
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    border-radius: 2px 2px 0 0;
+}
+
+.wrapper .title:before
+{
+    content: '';
+    position: absolute;
+    bottom: -38px;
+    left: -35px;
+    width: 35px;
+    height: 38px;
+    background: url('images/shadow.png');
+}
+
+.wrapper .title:after
+{
+    content: '';
+    position: absolute;
+    bottom: -38px;
+    right: -35px;
+    width: 35px;
+    height: 38px;
+    background: url('images/shadow.png');
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 .wrapper.style1
 {
