@@ -152,7 +152,7 @@ and (max-width : 737px)
         padding: 6em 2em 6em 2em;
     }
     .homepage #header {
-        padding: 8em 0;
+        padding: 7.5em 0;
     }
     #logo
     {
@@ -333,7 +333,7 @@ and (min-width : 900px)
 
     .homepage #header
     {
-        padding: 20em 0 !important;
+        padding: 19.5em 0 !important;
     }
 }
 
