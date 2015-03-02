@@ -87,7 +87,7 @@ p, ul, ol, dl
     left: -35px;
     width: 35px;
     height: 38px;
-    background: url('images/shadow.png');
+    background: url('css/images/shadow.png');
 }
 
 .wrapper .title:after
@@ -98,7 +98,7 @@ p, ul, ol, dl
     right: -35px;
     width: 35px;
     height: 38px;
-    background: url('images/shadow.png');
+    background: url('css/images/shadow.png');
     -moz-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     -o-transform: scaleX(-1);
